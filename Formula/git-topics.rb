@@ -1,8 +1,8 @@
 class GitTopics < Formula
   desc 'A collection of git commands to manage independent topic branches'
   homepage 'https://github.com/ajvondrak/git-topics'
-  url 'https://github.com/ajvondrak/git-topics/releases/download/v0.1.0/git-topics-0.1.0.tar.gz'
-  sha256 'ef5ebed1b9910ae453364840d926d60225232e4bc32d0d750b35b33b09161bec'
+  url 'https://github.com/ajvondrak/git-topics/releases/download/v0.2.0/git-topics-0.2.0.tar.gz'
+  sha256 'b39509d8185ed7d592af7c190d19a4c1a89bcd2c25994bd995300a47c5339485'
   head 'https://github.com/ajvondrak/git-topics'
 
   depends_on 'git'
@@ -21,6 +21,15 @@ class GitTopics < Formula
 
     bash_completion.install 'completions/bash/git-topics'
     zsh_completion.install 'completions/zsh/_git-topics'
+
+    share.install 'vim'
+  end
+
+  def caveats
+    <<~EOS
+To highlight `git topics reintegrate` syntax in Vim, add this to your .vimrc:
+  set runtimepath+=#{share/'vim'}
+    EOS
   end
 
   test do
