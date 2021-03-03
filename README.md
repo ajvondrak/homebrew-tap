@@ -12,5 +12,5 @@ $ brew install ajvondrak/tap/<formula>
 
 * [Homebrew](https://brew.sh/)
 * [`brew tap`](https://github.com/Homebrew/brew/blob/master/docs/brew-tap.md)
-* [How to Create an Maintain a Tap](https://github.com/Homebrew/brew/blob/master/docs/How-to-Create-and-Maintain-a-Tap.md)
+* [How to Create and Maintain a Tap](https://github.com/Homebrew/brew/blob/master/docs/How-to-Create-and-Maintain-a-Tap.md)
 * [Formula Cookbook](https://github.com/Homebrew/brew/blob/master/docs/Formula-Cookbook.md)
