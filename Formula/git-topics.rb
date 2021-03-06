@@ -5,7 +5,6 @@ class GitTopics < Formula
   sha256 'b39509d8185ed7d592af7c190d19a4c1a89bcd2c25994bd995300a47c5339485'
   head 'https://github.com/ajvondrak/git-topics'
 
-  depends_on 'git'
   depends_on 'bash'
 
   def install

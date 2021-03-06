@@ -6,8 +6,6 @@ class GitFix < Formula
   head "https://github.com/ajvondrak/git-fix"
   license "MIT"
 
-  depends_on "git"
-
   def install
     bin.install "bin/git-fix"
   end
